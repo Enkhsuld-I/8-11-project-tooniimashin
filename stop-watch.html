@@ -7,9 +7,25 @@
   </head>
   <body>
     <div>
-      <button id="start-button"></button>
-      <button id="stop-button"></button>
-      <button id="restart-button"></button>
+      STOP WATCH
+      <div style="display: flex; justify-content: space-evenly">
+        <span id="hour"></span>
+        <span id="minute"></span>
+        <span id="second"></span>
+      </div>
+      <div>
+        <button id="start-button" onclick="startTimer()">start</button>
+        <button id="stop-button" onclick="stopTimer()">stop</button>
+        <button id="reset-button" onclick="resetTimer()">reset</button>
+      </div>
     </div>
   </body>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <script src="stop-watch.js"></script>
 </html>
